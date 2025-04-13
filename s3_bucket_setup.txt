@@ -1,0 +1,7 @@
+S3 Bucket Setup Instructions:
+
+1. Create an S3 bucket in your AWS account.  Choose a unique name for your bucket (e.g., "log-analytics-yourname").
+2. Create two folders inside the bucket:
+    - raw_logs: This folder will store the raw log data ingested from Kinesis.
+    - aggregated_logs: This folder will store the aggregated log data processed by PySpark.
+3.  Ensure that your AWS credentials are configured correctly to allow Kinesis and PySpark to access the S3 bucket.  This typically involves setting up IAM roles with the necessary permissions.
